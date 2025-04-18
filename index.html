@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+
+  
+  <div class="md:hidden flex justify-between items-center px-4 py-3 border-b border-gray-800">
+    <h1 class="text-xl font-bold">Instagram</h1>
+    <span class="text-2xl">☰</span>
+  </div>
+
+  
+  <div class="flex flex-col md:flex-row max-w-7xl mx-auto">
+
+    
+    <div class="hidden md:block w-64 border-r border-gray-800 px-4 py-6">
+      <h1 class="text-2xl font-bold mb-6">Instagram</h1>
+      <nav class="space-y-4 text-lg">
+        <p class="flex items-center gap-2">🏠 Home</p>
+        <p class="flex items-center gap-2">🔍 Search</p>
+        <p class="flex items-center gap-2">🧭 Explore</p>
+        <p class="flex items-center gap-2">🎞️ Reels</p>
+        <p class="flex items-center gap-2">✉️ Messages</p>
+        <p class="flex items-center gap-2">❤️ Notifications</p>
+        <p class="flex items-center gap-2">➕ Create</p>
+        <p class="flex items-center gap-2">👤 Profile</p>
+      </nav>
+    </div>
+
+    
+    <div class="flex-1 px-4 py-6">
+      <div class="flex space-x-4 overflow-x-auto pb-4 border-b border-gray-800">
+        <div class="flex flex-col items-center text-sm">
+          <img src="https://i.pinimg.com/736x/eb/4c/6a/eb4c6aff22f60489196d990e961e37f7.jpg" class="w-14 h-14 rounded-full ring-2 ring-pink-500 object-cover" />
+          <p>attqa_khan</p>
+        </div>
+        <div class="flex flex-col items-center text-sm">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ5HGPJ_AgbpvWwQ5WPOX58S1Kxe6xlA3mOw&s" class="w-14 h-14 rounded-full ring-2 ring-pink-500 object-cover" />
+          <p>iseharhayat</p>
+        </div>
+        <div class="flex flex-col items-center text-sm">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3k_wjKJmQo--tX8YuNQAQe9c0NLGtcMgl1g&s" class="w-14 h-14 rounded-full ring-2 ring-pink-500 object-cover" />
+          <p>jannatmirza</p>
+        </div>
+      </div>
+
+    
+      <div class="mt-6">
+        <div class="flex justify-between items-center mb-3">
+          <div class="flex items-center gap-3">
+            <img src="https://w0.peakpx.com/wallpaper/152/332/HD-wallpaper-mahira-khan-actress-beautiful-beauty-bollywood-brown-hair-india-portrait-south-indian.jpg" class="w-10 h-10 rounded-full" />
+            <p class="font-semibold">Mahira khan</p>
+          </div>
+          <span class="text-xl">⋮</span>
+        </div>
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/media_bank/202310/pakistani-actress-mahira-khan-got-married-earlier-this-week-photo-mahira-khaninstagram-065103936-1x1.jpg?VersionId=R3AiuP.Gn.kU82uPeTNfn8ragWwFwES5" />
+        <div class="flex justify-between py-2 text-2xl">
+          <div class="space-x-4">
+            <span onclick="toggleLike(this)">🤍</span>
+            <span>💬</span>
+            <span>📤</span>
+          </div>
+          <span>🔖</span>
+        </div>
+        <p class="font-semibold text-sm">250 likes</p>
+        <p><span class="font-semibold">alishbahaidernaqvi</span> Outfit of the day 🌞</p>
+        <input type="text" placeholder="Add a comment..." class="w-full mt-2 bg-transparent border-b border-gray-700 text-sm focus:outline-none" />
+      </div>
+    </div>
+
+    
+    <div class="hidden lg:block w-72 px-4 py-6 border-l border-gray-800">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <p class="font-semibold">zoha_shahid21</p>
+          <p class="text-gray-400 text-sm">Zöhå</p>
+        </div>
+        <button class="text-blue-500 text-sm font-semibold">Switch</button>
+      </div>
+      <p class="text-gray-400 text-sm mb-3">Suggested for you</p>
+      <div class="space-y-4 text-sm">
+        <div class="flex justify-between items-center">
+          <p>haniaheofficial ✅</p>
+          <button class="text-blue-500 font-semibold">Follow</button>
+        </div>
+        <div class="flex justify-between items-center">
+          <p>nutrifactor.inc ✅</p>
+          <button class="text-blue-500 font-semibold">Follow</button>
+        </div>
+        <div class="flex justify-between items-center">
+          <p>mahirakhan ✅</p>
+          <button class="text-blue-500 font-semibold">Follow</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleLike(icon) {
+      icon.textContent = icon.textContent === '❤️' ? '🤍' : '❤️';
+    }
+  </script>
+</body>
+</html>
